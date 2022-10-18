@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent" >
+<div class="blue" > first </div>
+<div class="orange"> second </div>
+<div class="brown"> third </div>
+
+    </div>
+    <style>
+        .parent{
+        background-color: black;
+        display: flex;
+        flex-direction: ROW;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        height: 100vh;
+        justify-content: center;
+align-items: center;       
+/*justify-content: center;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: space-between;
+justify-content: space-around;
+
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;*/
+
+
+
+
+
+
+
+
+        }
+        .blue{background-color: blue;}
+        .orange{background-color: orange;}
+        .brown{background-color: brown ;}
+
+        .blue,.brown,.orange{
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        align-items: center;
+        }
+
+
+
+    </style>
+
+
+
+
+<script>
+
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+let tip = []
+let total  = []
+
+function calctip(number){
+   
+    let tip;
+    if(number >=50 && number <=300){  tip = 15/100 * number
+
+    }
+    else{ tip = 20/100 * number}
+return tip}
+
+
+for(let i = 0; i<bills.length;i++){let answer = calctip(bills[i]);console.log(answer)}
+
+
+
+/*write a function that accepts an argument. if the argument is 1, 
+return "your number is 1", otherwise, if the input is not 1, return "Your number is not 1"*/
+
+function up(abc){
+if(abc ==  1){return "your number is 1"}
+else{return "your number is not 1"}
+}
+let answer = up(1)
+console.log(answer)
+
+
+// write a function that takes an input which is a number and returns whether it is even or odd
+
+function down(number){
+if(number%2 == 0){
+    return"it is even"
+}else{return"it is odd"}
+
+}
+let ans = down(10)
+console.log(ans)
+
+
+
+
+
+
+
+// DECLARE A VARIABLE
+// ASSIGN  AN ARRAY OF LAPTOP MODEL TO IT AS ITS VALUE
+// WRITE A WHILE LOOP THAT PRINTS EACH ELEMENT OF THE ARRAY TO THE CONSOLE
+
+
+let laptopArray = ["hp", "dell", "appleMacbook", "lenovo"];
+laptopArray.forEach(
+    function(e){
+        console.log(e)
+    }
+    
+    )
+//while, for, for of , for in, forEach
+
+let y = 0;
+
+/*while(y < laptopArray.length){console.log(laptopArray[y])
+y++;
+}
+for(let y = 0;y < laptopArray.length;y++){console.log(laptopArray[y])}
+
+*/
+
+// ADD samsung and fujitsu to th array
+laptopArray.push("mujeeb")
+console.log(laptopArray)
+laptopArray[4] = "samsung"
+console.log(laptopArray)
+laptopArray[5] = "fujitsu"
+console.log(laptopArray)
+
+
+for(let mylaptop of laptopArray){console.log(mylaptop)}
+    
+for(let mylaptop in laptopArray){console.log(mylaptop)}
+
+setInterval(function(){console.log("my name is mujeeb")},2000)
+
+
+laptopArray.forEach(function(m){console.log(m)})
+    
+/*function printForecast(arr){
+
+    arr.forEach(function(e, index){
+        console.log(`${e}oC in ${index+1} days`);
+    })
+}
+undefined
+printForecast([17,21,23]);
+VM549:4 17oC in 1 days
+VM549:4 21oC in 2 days
+VM549:4 23oC in 3 days
+u*/
+</script>
+</body>
+</html>

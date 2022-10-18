@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+
+}
+td{
+    padding: 10px;
+}
+tr:nth-child(2){ background-color:orangered;
+
+}
+td{
+    text-align: center;
+}
+table{
+    width: 70%;
+}
+
+
+/*colspan, rowspan*/
+    </style>
+
+</head>
+<body>
+
+<table>
+    <thead>
+        <th>Number</th>
+<th>club</th>
+<th>mp</th>
+<th>w</th>
+<th>d</th>
+<th>points</th>
+</thead>
+
+<tbody>
+    <tr>
+<th>1</th>
+<td>arsenal</td>
+<td>1</td>
+<td>3</td>
+<td>7</td>
+<td>4</td>
+    </tr>
+
+<tr>
+<th>2</th>
+<td>real madrid</td>
+<td>4</td>
+<td>3</td>
+<td>6</td>
+<td>3</td>
+</tr>
+
+<tr>
+    <th>3</th>
+    <td>man u</td>
+    <td>7</td>
+    <td>4</td>
+    <td>1</td>
+    <td>0</td>
+</tr>
+</tbody>
+</table><br><br><br><br>
+
+
+<table>
+    <thead>
+        <th colspan="2">Number</th>
+
+<th>mp</th>
+<th>w</th>
+<th>d</th>
+<th>points</th>
+</thead>
+
+<tbody>
+    <tr >
+        <th rowspan="3">1</th>
+<td>arsenal</td>
+<td>1</td>
+<td>3</td>
+<td>7</td>
+<td>4</td>
+    </tr>
+
+<tr>
+<td>real madrid</td>
+<td>4</td>
+<td>3</td>
+<td>6</td>
+<td>3</td>
+</tr>
+
+<tr>
+    
+    <td>man u</td>
+    <td>7</td>
+    <td>4</td>
+    <td>1</td>
+    <td>0</td>
+</tr>
+</tbody>
+</table>

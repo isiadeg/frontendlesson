@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="parent">
+    <h1>welcome to our Website</h1>
+    <h2>I am Mujeeb-A Website Developer</h2>
+
+    <a href="https://mujeeb.web">click here</a>
+
+</div>
+<style>
+.parent{
+    display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+background-color: darkgreen;
+}
+a{
+    border: 1px solid black;
+            padding: 0.5rem 2rem;
+            color:yellow;
+            text-decoration: none;
+}
+
+</style>
+
+<script>
+bills = [125, 555, 44]
+function calctip(number){
+   // let tip;
+    //number >=50 && number <=300? tip = 15/100 * number : tip = 20/100 * number
+    //return tip;
+    let tip;
+    if(number >=50 && number <=300){  tip = 15/100 * number
+
+    }
+    else{  tip = 20/100 * number}
+return tip
+
+
+
+
+
+}
+tip=[calctip(125), calctip(555), calctip(44)]
+console.log(tip)
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Method</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <img src="images.jpg" alt="">
+            <div class="description">
+                <div class="title">
+                    Apple iPhone
+                </div>
+                <div class="words">
+                    This is a very good phone
+                </div>
+                <div class="buy">
+                    Buy Now
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <style>
+        body{
+            margin: 0px;
+        }
+        .buy{
+            border: 1px solid white; color: white; padding: 0.35rem 2.5rem; 
+            margin-top: 20px;
+        }
+        .box{
+            width:300px;
+            height: 500px;
+            overflow: hidden;
+            position: relative; display: flex; justify-content: center; align-items: center;
+        }
+        .box img{
+            height: 100%;
+            position: absolute;
+            top:0px;
+            width: auto;
+            z-index: 40%;
+        }
+        .description{
+            z-index: 500;
+            color:white; text-align: center;
+            
+        }
+        .title{
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 12px; margin-bottom: 15px;
+            margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+        }
+
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</body>
+</html>

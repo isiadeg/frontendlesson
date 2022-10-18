@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.mm{padding: 0.5rem 2rem;
+        background-color: black;
+        color:wheat;
+        border-radius: 3px;
+        cursor:pointer;}
+        .square{
+        background-color: pink;
+        width: 300px; 
+        height: 300px;
+        margin: 20px;
+        display: inline-block;}
+
+    </style>
+</head>
+<body>
+<input type="number" id="scoremark">
+<br>
+<input type="submit" onclick="next()">
+    
+     
+
+
+
+
+
+
+    <script>
+let markMass = 78;
+let markHeight = 1.69;
+
+let johnMass = 92;
+let johnHeight = 1.95;    
+  
+
+let markBmi = markMass / markHeight ** 2;
+
+let johnBmi = johnMass / johnHeight ** 2;
+
+console.log(markBmi,johnBmi)
+
+
+let markHigherBmi = markBmi>johnBmi
+console.log(markHigherBmi)
+
+if(markHigherBmi){
+    console.log("mark Bmi is higher than john!")
+
+}else{
+    console.log("john Bmi is higher than mark!")
+
+
+}
+let dolphinsScore = (97+112+101)/3
+let koalasScore = (109+95+106)/3
+console.log(dolphinsScore,koalasScore)
+
+let theirScore = dolphinsScore>koalasScore
+console.log(theirScore)
+
+if(theirScore){
+    console.log("dolphins wins")
+}else if(dolphinsScore==koalasScore){ console.log("they draw")}
+else{
+    console.log("koalas wins")
+}
+
+//ternary operator
+
+let tip; let billvalue; let totalvalue;
+
+billvalue = 430;
+console.log(billvalue >=50 && billvalue <=300? tip = 15/100 * billvalue : tip = 20/100 * billvalue)
+console.log(`The bill was ${billvalue}, the tip was ${tip}, and the final value as ${billvalue + tip}`)
+
+//function next(){
+  //  
+//}
+
+let next = ()=>{
+    
+
+    let score =document.getElementById("scoremark").value; 
+let grade;
+
+if(score >= 0 && score < 40){grade = "F"
+}else if(score>= 40 && score < 45){grade = "E"
+}else if(score>= 45 && score < 50 ){grade = "D"
+}else if (score>= 50 && score < 55){grade = "C"
+}else if (score>= 55 && score < 60){grade = "B"
+}else {grade = "A"} alert(grade)
+
+    console.log(grade);
+let passornot = score >=40?"pass":"fail"
+console.log(passornot)
+}
+
+
+
+//function calcAverage(a,b,c){return(a+b+c)/3};
+let calcAverage = (a,b,c)=>(a+b+c)/3; // arrow function =>
+
+let dolphinsAverage = calcAverage(44,23,71)
+console.log(dolphinsAverage)
+
+let koalasAverage = calcAverage(65,54,49)
+console.log(koalasAverage)
+
+let checkWinner = (team1,team2)=>{
+    console.log(team1, team2)
+if (team1 >= 2*team2){console.log(`Dolphins wins (${team1} vs ${team2})`)
+}else if (team2 >= 2*team1){console.log(`koalas wins (${team1} vs ${team2})`)}
+
+ 
+
+}
+
+
+dolphinsAverage = calcAverage(85,54,41)
+ koalasAverage = calcAverage(23,34,27)
+
+checkWinner(dolphinsAverage,koalasAverage)
+
+let array2 = [1,2,3,4,"5",6,7,8,9,10]
+for(let m =0; m<array2.length; m++){console.log(array2[m])}
+
+
+
+
+
+let builingarray = ["duplex","bungalow","self contain","flat"];
+
+let position = 0; 
+while(position < builingarray.length){console.log(builingarray[position])
+position++;
+
+
+
+}
+
+for(let position = 0;position < builingarray.length;position++){console.log(builingarray[position])}
+builingarray.pop()
+builingarray.pop()
+console.log(builingarray)
+
+builingarray.push("self contain")
+builingarray.push("flat")
+console.log(builingarray)
+
+builingarray[1] = "house"
+console.log(builingarray)
+builingarray[4] = "market"
+console.log(builingarray)
+
+
+// es6 ecma script 2016 let, const, arrow function
+
+
+
+
+    </script>
+</body>
+</html>

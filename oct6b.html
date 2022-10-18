@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="mo">
+<div class="description">
+    <div class="tittle">Apple iPhone
+    </div>
+<div class="words"> This is a good phone </div>
+<div class="buy">
+Buy Now    
+        </div>
+    
+                </div>
+        </div>
+
+    </div>
+
+
+
+
+<style>
+.parent{
+    
+
+    display: flex;
+           justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+
+
+        
+
+}
+body{margin: 0px;}
+.buy{ color: white;
+    border: 2px solid white;
+    padding: 0.35rem 2.5rem; 
+            margin-top: 20px;
+}
+.tittle{
+
+    text-align: center;
+            text-decoration: none;
+            margin-bottom: 12px; margin-bottom: 15px;
+            margin-bottom: 15px;
+    font-size: larger;
+    text-transform: uppercase;
+    color: white;
+        }
+        .words{color: white;
+            text-align: center;
+            font-size: large ;
+
+        }
+
+
+.mo{
+    background-image: url("images.jpg");
+    height: 500px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+</style>
+<script>
+    let arrayOfNames = ['sodiq', "Abdullahi", "hiqmot"]
+/*let changedNames = arrayOfNames.map(
+    function(e){
+        if( e == "sodiq"){
+            return "olododo"
+        }else if(e == "Abdullahi"){
+            return "erusin olohun"
+        }else if(e == "hiqmot"){
+            return "onimimo";
+        }
+    }
+) */
+
+
+//console.log(changedNames);
+//console.log(arrayOfNames);
+
+
+listOfNames = arrayOfNames.map(
+    function(m){if(m == "sodiq"){
+        return "A1";
+    }
+    else if (m == "Abdullahi"){
+        return "A2";
+    }
+    else if (m == "hiqmot"){
+        return "A3";
+    }
+
+    }
+    
+)
+console.log(listOfNames)
+</script>
+</body>
+</html>

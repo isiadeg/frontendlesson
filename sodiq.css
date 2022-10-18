@@ -1,0 +1,94 @@
+.top-navigation{
+    width: 100vw;
+    height: 55px;
+    background-color: #000;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.img{
+    width: 50%;
+    height: auto;
+
+}
+body{
+    margin:0px;
+
+  
+}
+a{
+    color: white;
+    
+    text-decoration: none;
+    margin-right: 20px;
+}
+h1{
+    text-align: center;
+    font-family:'Lucida Sans';
+}
+h2{
+    font-weight: normal;
+    text-align: center;
+}
+.half{
+    width: 50%;
+    float: left;
+}
+img{
+    width: 100%;
+
+}
+.product-button{
+    color: black;
+    border: 1px solid black;
+    /*
+    auto
+        width, height. margin, padding,
+        unit- cm, m vh
+
+        absolute units px 
+        relative units vw, vh, %, em, rem 
+
+        file system
+        color
+        block and inline
+        display: inline-block;
+
+        BORDER-STYLE
+        BORDER-WIDTH
+        BORDER-COLOR
+        border-top-style
+
+    */
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;;
+}
+img{
+    vertical-align: middle;
+}
+.secondtitle{
+    text-align: justify;
+}
+.secondtitle{
+    font-size: 1.2em;
+    
+}
+.three-floats{
+    float:left;
+    
+    margin-right: 0px;
+    width: 400px;
+    height: 800px;
+}
+.three-floats-parent{
+    margin: auto;
+    width:800px;
+    height:max-content;
+}

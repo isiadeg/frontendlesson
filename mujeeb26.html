@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> sept 26 </title>
+</head>
+<body>
+    <div class="square blue" style="display: block;"></div>
+    <div class="square black" style="display: none;"></div>
+    <div class="square red" style="display: none;"></div>
+    <div class="square green" style="display: none;"></div>
+
+    <button onclick="previous()"> Previous</button>
+    <button onclick="next()"> Next </button>
+    
+
+
+
+
+
+
+    <script>
+
+
+  //can also use function insteady of let//
+  let  previous =()=>{
+let theSquareElements = document.getElementsByClassName("square")
+        let y = 0
+        console.log(theSquareElements[y].style.display)
+        while(theSquareElements[y].style.display !== "block"){
+            console.log("my name")
+            y++;
+        }
+        
+                let theNextElement = y-1;
+               if(theNextElement < 0){
+              
+                 
+                }else{
+
+                    let u = 0;
+                while(u < theSquareElements.length){
+                    theSquareElements[u].style.display = "none";
+                    u++;
+                }
+              
+                theSquareElements[theNextElement].style.display ="block"; }
+
+
+        }
+
+
+
+
+
+
+        let next =()=>{
+let theSquareElements = document.getElementsByClassName("square")
+        let y = 0
+        console.log(theSquareElements[y].style.display)
+        while(theSquareElements[y].style.display !== "block"){
+            console.log("my name")
+            y++;
+        }
+        
+                let theNextElement = y+1;
+                if(theNextElement >= theSquareElements.length){
+              
+                 
+                }else{
+
+                    let u = 0;
+                while(u < theSquareElements.length){
+                    theSquareElements[u].style.display = "none";
+                    u++;
+                }
+               
+                theSquareElements[theNextElement].style.display ="block";}
+
+
+        }
+let x = 9
+        do{console.log(x);
+        x--;
+        
+        }
+        while(x > 10)
+
+        for(let z = 20; z>4; z--){console.log(z)}
+
+
+
+
+
+    </script>
+    <style>
+button{
+        padding: 0.5rem 2rem;
+        background-color: black;
+        color:wheat;
+        border-radius: 3px;
+        cursor:pointer;}
+        .square{
+        background-color: pink;
+        width: 300px; 
+        height: 300px;
+        margin: 20px;
+        display: inline-block;}
+
+.blue{
+background-color: blue;
+
+}
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+
+
+    </style>
+</body>
+</html>

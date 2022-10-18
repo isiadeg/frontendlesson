@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> September 26 </title>
+</head>
+<body>
+    <div class="square blue" style="display: block;"></div>
+    <div class="square orange" style="display: none;"></div>
+    <div class="square brown" style="display: none;"></div>
+    <div class="square  bkack" style="display: none;"></div>
+
+    <button onclick="next()"> Next </button>
+    
+</body>
+<script>
+    function next(){
+        let squareElements = document.getElementsByClassName("square");
+       //pseudo code
+       // it will check for the next element and make it show
+                // we will use the display property to get the current element
+                // we will use their index to get the next element
+                let x = 0;
+                console.log(squareElements[x].style.display)
+                while(squareElements[x].style.display !== "block"){ 
+                    console.log("I am in the while loop")
+                    x++;
+
+                }
+                console.log(x);
+                let theNextElement = x+1;
+                let y =0;
+                while(y < squareElements.length){
+                    squareElements[y].style.display = "none";
+                    y++;
+                }
+
+                squareElements[theNextElement].style.display ="block";
+
+       // apart from the one showing, the rest divs will not show
+        
+    }
+</script>
+<style>
+    button{
+        padding: 0.5rem 2rem;
+        background-color: black;
+        color:wheat;
+        border-radius: 3px;
+        cursor:pointer;
+        
+    }
+    .square{
+        background-color: yellow;
+        width: 300px; 
+        height: 300px;
+        margin: 20px;
+        display: inline-block;
+
+    }
+  .blue{
+    background-color: blue;
+  }
+  .orange{
+    background-color: orange;
+  }
+  .brown{
+    background-color: brown;
+  }
+  .bkack{
+    background-color: black;
+  }
+</style>
+</html>
+
